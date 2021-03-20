@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form page</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+
+<body>
+    <h1>My name is saurin Thakkar</h1>
+    <p>I am learning programming. This page is component library for the good
+        vibes form page.
+    </p>
+
+    <hr>
+
+    <h2>@typography</h2>
+
+
+    <h1>This is the biggest heading</h1>
+    <h2>This is second biggest</h2>
+    <p>This para tag is used for normal text</p>
+
+    <hr>
+
+    <h2>@container</h2>
+
+    <h3>fluid container</h3>
+    <div class="container fluid-container">This is fluid container and it will go until the end of page.</div>
+
+    <h3>Center container</h3>
+    <div class="container center-container">This is center container and it will go to specific width</div>
+
+    <hr>
+
+    <h2>@form and its elements</h2>
+
+    <form>
+        <div class="form-rows">
+            <div class="labels">
+                <label for="Textbox">Textbox</label>
+            </div>
+            <div class="fields">
+                <input type="text" class="input-fields" id="fname" name="fname" placeholder="Enter your name">
+            </div>
+        </div>
+        <div class="form-rows">
+            <div class="labels">
+                <label for="Textbox">Textbox with numbers only</label>
+            </div>
+            <div class="fields">
+                <input type="number" class="input-fields" id="number" placeholder="Enter a number between 1 and 10"
+                    min="1" max="10">
+            </div>
+        </div>
+        <div class="form-rows">
+            <div class="labels">
+                <label for="dropdown">dropdown</label>
+            </div>
+            <div class="fields">
+                <select id="cars" name="cars" class="dropdown">
+                    <option value="home">At Home</option>
+                    <option value="commute">On my commute</option>
+                    <option value="work">At Work</option>
+                    <option value="street">On the street</option>
+                    <option value="other">Other</option>
+
+                </select>
+            </div>
+
+        </div>
+        <div class="form-rows">
+            <div class="labels">
+                <label for="radio">Radio Button</label>
+            </div>
+            <div class="fields">
+                <input type="radio" id="morning" name="day" value="morning">
+                <label for="morning">Morning</label><br>
+                <input type="radio" id="afternoon" name="day" value="afternoon">
+                <label for="afternoon">Afternoon</label><br>
+                <input type="radio" id="evening" name="evening" value="evening">
+                <label for="evening">Evening</label><br>
+            </div>
+
+        </div>
+        <div class="form-rows">
+            <div class="labels">
+                <label for="checbox">Checkbox</label>
+            </div>
+            <div class="fields">
+                <input type="checkbox" id="excited">
+                <label for="excited">Excited</label><br>
+                <input type="checkbox" id="humbled">
+                <label for="humbled">Humbled</label><br>
+                <input type="checkbox" id="elated">
+                <label for="elated">Elated</label><br>
+                <input type="checkbox" id="loved">
+                <label for="loved">Loved</label><br>
+                <input type="checkbox" id="enthusiastic">
+                <label for="enthusiastic">Enthusiastic</label><br>
+
+
+            </div>
+            <div class="form-rows">
+                <div class="labels">
+                    <label for="textarea">Please describe your positive experience</label>
+                </div>
+                <div class="fields">
+
+                    <textarea name="message" class="fields_comment"  rows="1" cols="1"
+                        placeholder="Enter your experience here"></textarea>
+
+
+                </div>
+
+
+            </div>
+            <button class="button" id="submit" type="submit">Submit</button>
+
+
+    </form>
+
+</body>
+
+</html>

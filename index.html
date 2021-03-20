@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Good Vibes Form</title>
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <h1>Good Vibes Form</h1>
+    <div class="master-div">
+        <p id = "description">Tell us something positive that happened to you today.</p>
+        <form id="survey-form" form = "/do-something">
+            <div class="form-rows">
+                <div class="labels">
+                    <label for="Textbox">Name</label>
+                </div>
+                <div class="fields">
+                    <input type="text" class="input-fields" id="fname" name="fname" placeholder="Enter your name">
+                </div>
+            </div>
+            <div class="form-rows">
+                <div class="labels">
+                    <label for="Textbox">Email</label>
+                </div>
+                <div class="fields">
+                    <input type="email" class="input-fields" id="email" name="email" placeholder="Enter your email address" required>
+                </div>
+            </div>
+            <div class="form-rows">
+                <div class="labels">
+                    <label for="Textbox">On a scale of 1-10, how good was it?</label>
+                </div>
+                <div class="fields">
+                    <input type="number" class="input-fields" id="number" placeholder="Enter a number between 1 and 10"
+                        min="1" max="10">
+                </div>
+            </div>
+            <div class="form-rows">
+                <div class="labels">
+                    <label for="dropdown">At what time of day did it happen?</label>
+                </div>
+                <div class="fields">
+                    <select id="cars" name="cars" class="dropdown">
+                        <option value="home">At Home</option>
+                        <option value="commute">On my commute</option>
+                        <option value="work">At Work</option>
+                        <option value="street">On the street</option>
+                        <option value="other">Other</option>
+    
+                    </select>
+                </div>
+    
+            </div>
+            <div class="form-rows">
+                <div class="labels">
+                    <label for="radio">At what time of day did it happen?</label>
+                </div>
+                <div class="fields">
+                    <input type="radio" id="morning" name="day" value="morning">
+                    <label for="morning">Morning</label><br>
+                    <input type="radio" id="afternoon" name="day" value="afternoon">
+                    <label for="afternoon">Afternoon</label><br>
+                    <input type="radio" id="evening" name="evening" value="evening">
+                    <label for="evening">Evening</label><br>
+                </div>
+    
+            </div>
+            <div class="form-rows">
+                <div class="labels">
+                    <label for="checbox">What emotions did you experience?
+                        (Select all that apply)</label>
+                </div>
+                <div class="fields">
+                    <input type="checkbox" id="excited">
+                    <label for="excited">Excited</label><br>
+                    <input type="checkbox" id="humbled">
+                    <label for="humbled">Humbled</label><br>
+                    <input type="checkbox" id="elated">
+                    <label for="elated">Elated</label><br>
+                    <input type="checkbox" id="loved">
+                    <label for="loved">Loved</label><br>
+                    <input type="checkbox" id="enthusiastic">
+                    <label for="enthusiastic">Enthusiastic</label><br>
+    
+    
+                </div>
+                <div class="form-rows">
+                    <div class="labels">
+                        <label for="textarea">Please describe your positive experience</label>
+                    </div>
+                    <div class="fields">
+    
+                        <textarea name="message" class="fields_comment"  rows="1" cols="1"
+                            placeholder="Enter your experience here"></textarea>
+    
+    
+                    </div>
+    
+    
+                </div>
+                <button class="button" id="submit" type="submit">Submit</button>
+    
+    
+
+    </div>
+    
+</body>
+</html>
